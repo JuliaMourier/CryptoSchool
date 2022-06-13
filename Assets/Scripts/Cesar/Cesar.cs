@@ -110,6 +110,7 @@ public class Cesar : MonoBehaviour
         if (decryptionText.text == textToEncrypt)
         {
             levelManager.hasWinLevel = true;
+            decryptionText.gameObject.GetComponent<Animator>().SetTrigger("win");
         }
     }
 
