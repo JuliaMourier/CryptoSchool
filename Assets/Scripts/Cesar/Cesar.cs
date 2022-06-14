@@ -22,7 +22,8 @@ public class Cesar : MonoBehaviour
     //UI :
     public TextMeshProUGUI cipherText;
     public TextMeshProUGUI decryptionText;
-    
+
+    public Animator loose;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,11 +107,18 @@ public class Cesar : MonoBehaviour
         decryptionShift = (int) key;
         plainTextInInteger = MessageIntoNumbers(cipher);
         decryptionText.text = Encrypt(decryptionShift);
+    }
 
+    public void Check()
+    {
         if (decryptionText.text == textToEncrypt)
         {
             levelManager.hasWinLevel = true;
             decryptionText.gameObject.GetComponent<Animator>().SetTrigger("win");
+        }
+        else
+        { 
+            loose.SetTrigger("loose");
         }
     }
 
