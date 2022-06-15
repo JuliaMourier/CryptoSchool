@@ -672,7 +672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Algorithme Y
+  m_text: Analyse frequentielle
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d35e74a00e8eca747a8712c0a3efa53f, type: 2}
   m_sharedMaterial: {fileID: 1422403723586020176, guid: d35e74a00e8eca747a8712c0a3efa53f, type: 2}
