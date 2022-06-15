@@ -8,11 +8,17 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    public int idItem;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    public int getIdItem()
+    {
+        return idItem;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
