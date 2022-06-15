@@ -385,6 +385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2080745871660589612, guid: 9d1f9738e5399da48af68fd95982023b, type: 3}
+      propertyPath: panelGameOver
+      value: 
+      objectReference: {fileID: 7809160338212503304}
     - target: {fileID: 2080745871660589613, guid: 9d1f9738e5399da48af68fd95982023b, type: 3}
       propertyPath: m_Name
       value: LevelManager
@@ -431,6 +435,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2080745871660589615, guid: 9d1f9738e5399da48af68fd95982023b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080745873107479932, guid: 9d1f9738e5399da48af68fd95982023b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -816,6 +824,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443603466}
   m_CullTransparentMesh: 1
+--- !u!224 &498699247 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+  m_PrefabInstance: {fileID: 7809160338212503303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &516739165
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,9 +886,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Son nom lui vient de Jules C\xE9sar qui aurait utilis\xE9 cette m\xE9thode
-    avec l'alphabet Grec avec un d\xE9calage de 3 entre 100 av.J.-C et -44 av. J.-C
-    vers la gauche ce qui permettait seulement \xE0 l'\xE9lite dirigeante romaine."
+  m_text: "C'est au IXe si\xE8cle que la premi\xE8re decryption fr\xE9quentielle
+    a \xE9t\xE9 r\xE9pertori\xE9e. Al-Kindi, aurait utilis\xE9e cette technique afin
+    de reconstituer la chronologie des r\xE9v\xE9lation du Coran. Il aurait publi\xE9
+    cette m\xE9thode dans un Manuscrit sur le d\xE9chiffrement des messages cryptographiques."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1097,103 +1111,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620815318}
   m_CullTransparentMesh: 1
---- !u!1001 &767468991
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4743690006516269754, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_Name
-      value: Letter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 73.3004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 67.7164
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -89.11914
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -8.858215
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351860407005008879, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 03afe0165d6ef9547bd644ab17faafaf, type: 3}
 --- !u!1 &803758794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2761,7 +2678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -488, y: 34.39001}
+  m_AnchoredPosition: {x: -462, y: 119.70001}
   m_SizeDelta: {x: 631.2473, y: 61.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359848924
@@ -3905,6 +3822,7 @@ RectTransform:
   - {fileID: 1389294383}
   - {fileID: 2083727084}
   - {fileID: 2118811831}
+  - {fileID: 498699247}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4212,7 +4130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -488, y: -213.31}
+  m_AnchoredPosition: {x: -462, y: -128}
   m_SizeDelta: {x: 877.0869, y: 557.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146111522
@@ -4235,9 +4153,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ce code est un chiffrement par d\xE9calage monoalphab\xE9tique, cnaque
-    lettre est remplac\xE9e par une autre. L'alphabet est d\xE9cal\xE9.\nPuisque
-    l'alphabet est compos\xE9 de 26 lettres, il n'y a que 26 d\xE9calages possibles."
+  m_text: "L'analyse fr\xE9quentielle est une technique de d\xE9chiffrement permettant
+    de pr\xE9dire les lettres utilis\xE9es gr\xE2ce \xE0 leur fr\xE9quence d'apparition
+    dans un texte suffisament llong et en  comparant au fr\xE9quence d'apparition
+    des lettres dans la langue du texte. Cela ne fonctionne que pour les chiffrement
+    par substitution comme le code C\xE9sar, le chiffrement de Vigen\xE8re ou comme
+    dans ce challenge un substitution al\xE9atoire.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4300,7 +4221,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 3.522493, w: 17.669464}
+  m_margin: {x: 0, y: 0, z: 3.522493, w: -77.92056}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4520,3 +4441,111 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61600739441d0754f8c28d032d4d12b7, type: 3}
+--- !u!1001 &7809160338212503303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2092357570}
+    m_Modifications:
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234920, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809160338133234921, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+      propertyPath: m_Name
+      value: NextLevelPanel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+--- !u!114 &7809160338212503304 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7809160338133234935, guid: a49185f68d93ccc40b0fbb7f09db41f7, type: 3}
+  m_PrefabInstance: {fileID: 7809160338212503303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77da3ed7d1a66994482120203a9d9655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

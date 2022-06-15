@@ -7,7 +7,11 @@ public class GameManager : MonoBehaviour
 {
     public ParticleSystem particleSystemWin;
     public bool hasWinLevel = false;
-    public bool winLaunched = false;
+    private bool winLaunched = false;
+    
+    public NextLevel panelGameOver;
+    
+    
     private void Start()
     {
         particleSystemWin.Stop();
@@ -17,9 +21,20 @@ public class GameManager : MonoBehaviour
     {
         if (hasWinLevel && !winLaunched)
         {
-            winLaunched = true;
-            particleSystemWin.gameObject.SetActive(true);
-            particleSystemWin.Play();
+            Win();
         }
+    }
+
+    public void Win()
+    {
+        winLaunched = true;
+        particleSystemWin.gameObject.SetActive(true);
+        particleSystemWin.Play();
+        Invoke(nameof(OpenGameOverPanel), 2);
+    }
+    
+    public void OpenGameOverPanel()
+    {
+        panelGameOver.gameObject.SetActive(true);
     }
 }
