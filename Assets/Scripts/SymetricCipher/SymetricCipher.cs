@@ -7,8 +7,7 @@ public class SymetricCipher : MonoBehaviour
 {
     //Private plain text to encrypt
     public string textToEncrypt = "HELLO EVERYONE";
-    //Private encryption key
-    public int encryptionKey = 0;
+    private string decrypted;
     private List<string> alphabet;
     private GameManager levelManager;
     //UI :
@@ -19,9 +18,12 @@ public class SymetricCipher : MonoBehaviour
     private Dictionary<string, string> substitutionTable;
 
     public AlphabetGenerator alphabetInput;
+
     // Start is called before the first frame update
     void Start()
     {
+        levelManager = FindObjectOfType<GameManager>();
+
         letterFrequentialIteration = FrequentialIterationGenerator();
         textToEncrypt = textToEncrypt.ToUpper();
         substitutionTable = GenerateSubtitutionTable();
@@ -54,6 +56,10 @@ public class SymetricCipher : MonoBehaviour
 
         string decryption = Decrypt(tmpSubstitutionTable);
         cipherText.text = decryption;
+        if (decrypted == textToEncrypt)
+        {
+            levelManager.hasWinLevel = true;
+        }
     }
     
     public Dictionary<string, string> GenerateSubtitutionTable()
@@ -99,18 +105,21 @@ public class SymetricCipher : MonoBehaviour
     public string Decrypt(Dictionary<string, string> substitutionTableTmp)
     {
         string plain = "";
+        decrypted = "";
         foreach (char letter in cipher)
         {
+            
             if (substitutionTableTmp.ContainsKey(letter.ToString()))
             {
-                plain += "<mark>" + substitutionTableTmp[letter.ToString()] + "</mark>";
+                plain += "<mark>" + substitutionTableTmp[letter.ToString()].ToUpper() + "</mark>";
+                decrypted += substitutionTableTmp[letter.ToString()].ToUpper();
             }
             else
             {
                 plain += letter;
+                decrypted += letter;
             }
         }
-
         return plain;
     }
     
