@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToEncrypt: Le principal point faible de cette technique est qu'il est necessaire
-    d'avoir assez de characteres pour avoir un echantillon assez grand et deviner
+    d'avoir assez de caracteres pour avoir un echantillon assez grand et deviner
     les lettres utilisees.
   cipherText: {fileID: 1119829567}
   alphabetInput: {fileID: 80197785}
