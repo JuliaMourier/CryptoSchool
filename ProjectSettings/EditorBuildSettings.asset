@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d36dc148c9b495db4be4a6bbcc28ff9c
+  - enabled: 1
+    path: Assets/Scenes/Cesar.unity
+    guid: 7c9166b230d9aeb48bb5e0d29fb1a176
+  - enabled: 1
+    path: Assets/Scenes/SymetricCipher.unity
+    guid: 3cb64aec55d83c140b45d232f50fb3f9
+  - enabled: 1
+    path: Assets/Scenes/Lvl_RSA.unity
+    guid: 1029efea768e661fda3b8a2e11c7d902
+  - enabled: 1
+    path: Assets/Scenes/Diffie-Hellman.unity
+    guid: a29b8def734a6cc40bb3e2c32d00fc83
+  - enabled: 1
+    path: Assets/Scenes/LvlMenu.unity
+    guid: 7bb282797a90383fba728d961bf9d034
+  - enabled: 0
     path: Assets/Scenes/CryptoSchool.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
