@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private bool winLaunched = false;
     
     public NextLevel panelGameOver;
+
+    public Animator loose;
     
     
     private void Start()
@@ -36,5 +38,10 @@ public class GameManager : MonoBehaviour
     public void OpenGameOverPanel()
     {
         panelGameOver.gameObject.SetActive(true);
+    }
+
+    public void Loose()
+    {
+        loose.SetTrigger("loose");
     }
 }
