@@ -13,7 +13,9 @@ Avec un outil comme fork ou gitkraken, vous pourrez facilement cloner le projet 
 
 ## Build 
 
-Pour build notre jeu, il faut ouvrir Unity . Dans File, vous pourrez aller sur Build Setting. Après vous être assurer d'avoir les mêmes paramètres que la capture suivante :
+Le build du jeu est disponible dans le dossier Build, il suffit de cliquer sur CryptoScool.exe pour lancer le jeu.
+
+Pour build notre jeu de votre côté, il faut ouvrir Unity . Dans File, vous pourrez aller sur Build Setting. Après vous être assurer d'avoir les mêmes paramètres que la capture suivante :
 
 ![image](https://user-images.githubusercontent.com/39050848/175695400-798bf6ba-1d11-4908-b3f2-5adb3d2b87f8.png)
 
